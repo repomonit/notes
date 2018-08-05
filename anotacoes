@@ -1,0 +1,230 @@
+05/08/2018
+
+Yago Ésquines
+yago.almeida@4linux.com.br
+
+usuário: domingo
+senha: domingo
+
+http://dontpad.com/infra6491
+
+http://525.salas4linux.com.br
+
+Vagrantfile:
+https://drive.google.com/file/d/1Vdqh22MMZbMaw0RTLOwJlbmIwr2MHTtW/view
+
+setxkbmap -model abnt -layout br
+
+vagrant -v
+2.x.x
+
+mkdir infra_domingo
+
+vagrant init (criar arquivo de conf)
+
+vim Vagrandfile
+
+mv Vagrandfile Vagrandfile-OLD
+
+vagrant up (download e preparacao das VMs)
+
+https://xebialabs.com/periodic-table-of-devops-tools/
+
+www.itcerts.com.br/devops
+
+https://www.lpi.org/our-certifications/lpic-ot-devops-overview
+
+vagrant ssh devops
+
+ctrl + v (depois x) modo bloco do vim
+
+vagrant half (desligar as VMs)
+
+vagrant up --provision (sobe lendo o arquivo de conf novamente Vagrandfile)]
+
+install python e python pip
+
+pip install ansible
+
+ansible --version
+
+criar /etc/ansible (hosts e ansible.cfg)
+
+vim hosts
+
+[devops]
+192.168.99.10
+
+[docker]
+192.168.99.20
+
+[automation]
+192.168.99.30
+
+[teste]
+192.168.99.[1:10]
+
+ansible -i hosts all -m ping
+
+ansible -i hosts devops -m ping
+
+ansible devops -m ping
+
+ansible devops,docker -m command -a 'uname'
+
+https://docs.ansible.com/ansible/latest/modules/modules_by_category.html
+
+Exemplo de playbook.yml
+
+---
+- name: Testando o Ansible
+  hosts: docker devops automation
+  tasks:
+
+#  - name: Criar usuario
+#    user: name={{ username }} shell=/bin/bash create_home=yes
+
+  - name: Instalando pacotes
+    yum:
+      name: "{{ item }}"
+      state: present
+      update_cache: yes
+    with_items:
+    - "epel-release"
+    when: ansible_distribution == "CentOS"
+
+  - name: Instalando pacotes
+    apt:
+      name: "{{ item }}"
+      state: present
+      update_cache: yes
+    with_items:
+    - "cowsay"
+    - "fortunes-br"
+    - "figlet"
+    when: ansible_distribution == "Ubuntu"
+
+  - name: Instalando pacotes
+    yum:
+      name: "{{ item }}"
+      state: present
+      update_cache: yes
+    with_items:
+    - "cowsay"
+    - "figlet"
+    when: ansible_distribution == "CentOS"
+
+  - name: Garantir DNS local
+    lineinfile:
+      path: /etc/hosts
+      line: "{{ item }}"
+    with_items:
+    -  "192.168.99.10 devops.salas4linux.com.br devops"
+    -  "192.168.99.20 docker.salas4linux.com.br docker"
+    -  "192.168.99.30 automation.salas4linux.com.br automation"
+
+  - name: Garantindo a variavel PATH
+    lineinfile:
+      path: /etc/profile
+      line: "export PATH=$PATH:/usr/games"
+      state: present
+
+  - name: Verificando a memoria
+    command: free -h
+
+  - name: Instalando o pacote sl
+    apt: name=sl state=absent update_cache=yes
+    when: ansible_distribution == "Ubuntu"
+
+  - name: Movendo arquivos
+    copy:
+      src: lanterna_verde
+      dest: /tmp/lanterna_verde
+
+  - name: Movendo arquivos bashrc
+    copy:
+      src: /root/bashrc
+      dest: /root/.bashrc
+
+  - name: Instalando o pacote nginx
+    apt: name=nginx state=present update_cache=yes
+    notify: restart
+    when: ansible_distribution == "Ubuntu"
+
+  - name: Instalando o pacote nginx
+    yum: name=nginx state=present update_cache=yes
+    notify: restart
+    when: ansible_distribution == "CentOS"
+
+  handlers:
+  - name: restart
+    service:
+      name: nginx
+      state: restarted
+
+vim /etc/lanterna_verde
+
+ansible devops,docker -m command -a 'ls /tmp'
+
+ansible-playbook playbook.yml -e "username=gordon"
+
+---
+- name: Desafio 1
+  hosts: docker devops automation
+  tasks:
+
+  - name: Desinstalando o pacote nginx
+    notify: stop
+    apt: name=nginx* state=absent update_cache=yes
+    when: ansible_distribution == "Ubuntu"
+
+  - name: Desinslando o pacote nginx
+    notify: stop
+    yum: name=nginx* state=absent update_cache=yes
+    when: ansible_distribution == "CentOS"
+
+  - name: Instalando pacotes
+    apt:
+      name: "{{ item }}"
+      state: present
+      update_cache: yes
+    with_items:
+    - "apache2"
+    - "libapache2-mod-php7.0"
+    - "php7.0"
+    notify: start_apache
+    when: ansible_distribution == "Ubuntu"
+
+  - name: Instalando pacotes
+    yum:
+      name: "{{ item }}"
+      state: present
+      update_cache: yes
+    with_items:
+    - "httpd"
+    - "php"
+    notify: start_httpd
+    when: ansible_distribution == "CentOS"
+
+  - name: Habilitar modulo php
+    command: a2enmod php7.0
+    when: ansible_distribution == "Ubuntu"
+
+  - name: Movendo arquivos
+    copy:
+      src: index.php
+      dest: /var/www/html/
+
+  handlers:
+  - name: stop
+    service:
+      name: nginx
+      state: stopped
+  - name: start_apache
+    service:
+      name: apache2
+      state: started
+  - name: start_httpd
+    service:
+      name: httpd
+      state: started
