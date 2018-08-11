@@ -1,0 +1,26 @@
+---
+- name: Deploy Gliese Dev
+  hosts: gliese_dev
+  remote_user: svc_rundeck
+  tasks:
+
+  - name: Copy war
+    copy:
+      src: "{{ file }}"
+      dest: /tmp
+
+  - name: Stop tomcat
+    become: true
+    become_user: root
+    shell: kill -9 $(ps -ef |grep -v grep |grep instance05 |awk {'print $2'})
+
+  - name: Deploy
+    command: mv /tmp/{{ file }} /opt
+
+  - name: Waiting for stop tomcat
+    wait_for: timeout=5
+
+  - name: Start tomcat
+    become: true
+    become_user: xldeploy
+    shell: /opt/gliese/servers/instance05/bin/startup.sh
