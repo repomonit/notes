@@ -1,0 +1,204 @@
+# 26/08/2018 - Puppetlab & Docker
+
+Criar módulo no Puppet
+/etc/puppetlabs/code/modules/pdk new module NOME_DO_MODULO
+
+-MODULO DOCKER
+-Fazer um modulo chamado DOCKER
+-E criar o arquivo 'modules/docker/manifests/init.pp' seguindo as informações da Documentação do DOCKER (https://docs.docker.com/install/)
+-Fazer a init.pp tanto para Like Debian quanto para Like Red Hat
+-Porem a classe só deve rodar na máquina docker.salas4linux.com.br (arquivo prodution/site.pp)
+
+Instalação docker
+https://docs.docker.com/install/#supported-platforms
+
+############# DESAFIO 3 #############
+class docker {
+	case $::osfamily{
+		"debian":{
+			exec{'Atualização_Repositorios':
+				command => "/usr/bin/apt update"
+			}
+			
+			$distro_name = $facts['os']['distro']['codename']
+			$pacotes = ['apt-transport-https','ca-certificate','curl','software-properties-common']
+			$repositorio = "/usr/bin/curl -fsSL https://download.docker.com/linux/ubuntu/gpg | /usr/bin/apt-key add - ; /usr/bin/add-apt-repository 'deb [arch=amd64] https://download.docker.com/linux/ubuntu $distro_name stable' ; /usr/bin/apt update"
+		}
+
+		"redhat":{
+			$pacotes = ['yum-utils','device-mapper-persistent-dat','lvm2']
+			$repositorio = "/bin/yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo" 
+		}
+	}
+
+	package{$pacotes:
+		ensure => present
+	}
+
+	exec{"Adicionando_Repositorios":
+		command => $repositorio
+	}
+
+
+	package{'docker-ce':
+		ensure => present
+	}
+
+	service{'docker':
+		ensure => running,
+		enable => true,
+		require => Package['docker-ce']
+	}
+	
+}
+
+DOCKER
+
+docker run debian ls /etc
+
+docker ps
+root@docker:/etc# docker ps
+CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS              PORTS               NAMES
+e80deb2bc8de        centos              "/bin/bash"         22 minutes ago      Up 22 minutes                           asa_noturna
+50e75fb89abd        centos              "/bin/bash"         27 minutes ago      Up 48 seconds                           desafiador
+
+docker ps -a
+CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS                      PORTS               NAMES
+e80deb2bc8de        centos              "/bin/bash"         22 minutes ago      Up 22 minutes                                   asa_noturna
+50e75fb89abd        centos              "/bin/bash"         27 minutes ago      Up 59 seconds                                   desafiador
+4d57ba82b334        debian              "ls /etc"           39 minutes ago      Exited (0) 39 minutes ago                       peaceful_raman
+
+docker run --name desafiador -it centos /bin/bash
+
+ctrl + P + Q
+
+docker attach desafiador
+
+docker exec desafiador ls /etc
+
+docker exec desafiador /bin/bash
+
+docker exec -it desafiador /bin/bash
+
+docker stop desafiador
+
+docker rm peaceful_raman
+
+docker system prume (mata container inativo)
+
+docker ps -qa
+e80deb2bc8de
+50e75fb89abd
+
+docker images
+REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
+centos              latest              5182e96772bf        2 weeks ago         200MB
+debian              latest              3bbb526d2608        5 weeks ago         101MB
+
+docker volumee ls
+
+docker volume create --name dcwomen
+
+/var/lib/docker/volumes/dcwomen
+
+docker run -dti --name dcwomen -v dcwomen:/root/dcwomen/ centos /bin/bash
+
+docker stat
+
+docker run -dit -p 8883:8883 igorsoares/aol-dasa
+
+docker network create --subnet 10.0.0.0/16 dockerlan
+
+docker run -ti --name cliente_nginx -h cliente_nginx --ip 10.0.0.10 --net dockerlan debian /bin/bash
+
+Faz a inspeção de um determinado container
+docker inspect <nome>
+
+docker network ls
+
+docker network create --subnet ipx <name>
+
+docker network connect <nome-rede> <container>
+
+--ip x.x.x.x --net <nome_rede>
+
+docker commit cliente_nginx cliente_nginx_curl
+
+docker images
+
+### docker-compuse
+
+  wordpress:
+    image: wordpress
+    links:
+      - mysql-server:mysql
+    ports:
+      - 8080:80
+    enviroment:
+      - WORDPRESS_DB_PASSWORD=4linux
+  mysql_server:
+    image: mysql
+    enviroment:
+      - MYSQL_ROOT_PASSWOD=4linux
+      - MYSQL_DATABASE=wordpress
+
+Dockerfile
+FROM debian
+MAINTAINER luiz@dasa.com.br
+
+RUN apt clean all
+RUN apt update
+#ADD pega conteudo da internet
+RUN apt install apache2 linuxlogo -y
+
+#COPY - copias locais de coisas para dentro do container
+#ENV - Variavel
+#CMD - comandos caso nao tenho entry
+
+EXPOSE 80
+ENTRYPOINT ["/bin/bash"]
+
+docker save kenobi -o kenobi_image.tar
+
+/root/Dockerfile
+
+docker build . -t kenobi
+
+docker run -d --name portainer -p 8081:9000 -v /var/run/docker.sock:/var/run/docker.sock portainer/portainer
+
+http://192.168.99.20:8081/#/init/endpoint
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

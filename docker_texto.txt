@@ -1,0 +1,499 @@
+    1  exit
+    2  ip a
+    3  apt-get update
+    4  apt-get install python python-pip -y
+    5  sl
+    6  /usr/games/sl
+    7  q
+    8  l
+    9  q
+   10  ls
+   11  sl
+   12  exit
+   13  sl
+   14  ll
+   15  vim /etc/hosts
+   16  ll
+   17  ping automation
+   18  ping docker
+   19  free -g
+   20  ll
+   21  exit
+   22  ll
+   23  top
+   24  apt remove apache2
+   25  top
+   26  q
+   27  apt remove apache2-bin apache2-data apache2-utils
+   28  q
+   29  apt remove apache2-bin apache2-data apache2-utils liapache2-mod-php7.0
+   30  top
+   31  ps -ef  | gerp apa
+   32  ps -ef  | grep apache
+   33  journalctl -xe 
+   34  cd /etc/apache2/mods-enabled/
+   35  ls -l 
+   36  journalctl -xe 
+   37  rm php7.0.load 
+   38  top
+   39  ll
+   40  ps -ef | grep agent
+   41  apt-get install puppet-agent
+   42  cd /etc/puppetlabs/
+   43  ll
+   44  top
+   45  cd /etc/puppetlabs/
+   46  ll
+   47  cd puppet/
+   48  ll
+   49  cd ..
+   50  ll
+   51  cd do
+   52  ll
+   53  cd /etc/puppetlabs/
+   54  ll
+   55  cd puppet/
+   56  ll
+   57  cat puppet.conf 
+   58  puppet agent -t
+   59  class capuz_vermelho {
+   60  file {"/etc/puppetlabs/puppet/puppet.conf":
+   61  source => puppet:///modules/capuz_vermelho/puppet.conf",
+   62  ensure => present,
+   63  }
+   64  service {'puppet':
+   65  ensure => running,
+   66  enable => true,
+   67  subscribe => File['/etc/puppetlabs/puppet/puppet.conf
+   68  file {"/etc/puppetlabs/puppet/puppet.conf":
+   69  puppet agent -t
+   70  apt install puppet-common
+   71  puppet agent -t
+   72  puppet agent -t --server 192.168.88.10
+   73  puppet agent -t --server 192.168.99.10
+   74  ps -ef | grep agent
+   75  ps -ef | grep puppet
+   76  ll
+   77  puppet agent -t --server 192.168.99.10
+   78  puppet agent -t --server devops;salas4linux.com.br
+   79  puppet agent -t --server devops.salas4linux.com.br
+   80  puppet agent --enable
+   81  puppet agent -t --server devops.salas4linux.com.br
+   82  systemctl start puppet
+   83  exit
+   84  systemctl status pup
+   85  puppet agent -t --server devops.salas4linux.com.br
+   86  systemctl status puppet
+   87  puppet agent -t --server devops.salas4linux.com.br
+   88  service puppet start
+   89  cd /opt/puppetlabs/
+   90  ll
+   91  cd puppet/
+   92  ll
+   93  cd share/
+   94  ll
+   95  cd /etc/p
+   96  cd /etc/puppet
+   97  ll
+   98  cd ..
+   99  ll
+  100  cd puppetlabs/
+  101  ll
+  102  cd puppet/
+  103  ll
+  104  cd ..
+  105  cd /opt/
+  106  ll
+  107  cd puppetlabs/
+  108  ll
+  109  cd puppet/
+  110  l
+  111  cd /opt/
+  112  ll
+  113  apt-get install pupput-agent
+  114  puppet agent --enable
+  115  service puppet start
+  116  puppet agent -t --server devops.salas4linux.com.br
+  117  systemctl start puppet
+  118  cd /etc/init.d/
+  119  ll
+  120  ls
+  121  cd /etc/puppet
+  122  ls
+  123  ll
+  124  cd ..
+  125  ll
+  126  cd /opt/
+  127  ll
+  128  cd ..
+  129  puppet agent -t --server devops.sa
+  130  puppet agent -t --server devops.salas4linux.com.br
+  131  systemctl status puppet
+  132  cd /etc/sysctl.d/
+  133  ll
+  134  cd ..
+  135  ll
+  136  systemctl status puppet
+  137  cd /etc/puppet
+  138  ll
+  139  cd modules/
+  140  ll
+  141  cd ..
+  142  ll
+  143  cd ..
+  144  ll
+  145  cat /etc/debian_version 
+  146  systemctl status puppet
+  147  puppet agent -t --server devops.salas4linux.com.br
+  148  puppet
+  149  systemctl status puppet
+  150  cd puppet
+  151  ls
+  152  cd ../
+  153  ls
+  154  mkdir puppetlabs
+  155  cd puppetlabs/
+  156  ls
+  157  cd puppet/
+  158  ls
+  159  cat puppet.conf 
+  160  cd ../
+  161  ls
+  162  systemctl start puppet
+  163  ls
+  164  cd 
+  165  journalctl -xe
+  166  dpkg -l | grep puppet
+  167  apt install puppet-agent
+  168  puppet agent -t --server devops.salas4linux.com.br
+  169  find /etc/puppetlabs/puppet/ssl -name docker.salas4linux.com.br.pem -delete
+  170  puppet agent -t --server devops.salas4linux.com.br
+  171  history
+  172  dpkg -l | grep puppet
+  173  puppet agent -t --server devops.salas4linux.com.br
+  174  ll
+  175  pwd
+  176  cd /etc/puppetlabs/puppet/
+  177  ll
+  178  vim puppet.conf 
+  179  cat puppet.conf 
+  180  vim puppet.conf 
+  181  cat puppet.conf 
+  182  ll
+  183  cd ..
+  184  ll
+  185  cd code/
+  186  ll
+  187  cd modules/
+  188  l
+  189  ll
+  190  cd ..
+  191  ll
+  192  cd ..
+  193  ll
+  194  cd ..
+  195  ll
+  196  cd puppetlabs/
+  197* 
+  198  cd puppet/
+  199  ll
+  200  vim puppet.conf 
+  201  ll
+  202  vim puppet.conf 
+  203  ls
+  204  vim puppet.conf 
+  205  top
+  206  cd /var/log/
+  207  ls
+  208  cd puppetlabs/
+  209  ll
+  210  cd p
+  211  cd puppet/
+  212  ll
+  213  cd ~
+  214  lsof -i:80
+  215  puppet agent -t --server devops.salas4linux.com.br
+  216  cd /var/log/
+  217  mm
+  218  ls
+  219  ll
+  220  lsof -i:80
+  221  cat /var/log/syslog 
+  222  puppet agent -t --server devops.salas4linux.com.br
+  223  apt-get install docker-ce
+  224  curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+  225  locate curl
+  226  locate apt-get
+  227  locate apt-key
+  228  locate add-apt
+  229  puppet agent -t --server devops.salas4linux.com.br
+  230  add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable
+  231  add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
+  232  puppet agent -t --server devops.salas4linux.com.br
+  233  apt-get docker-ce
+  234  apt-get install docker-ce
+  235  puppet agent -t --server devops.salas4linux.com.br
+  236  cd /etc/docker/
+  237  ls
+  238  ll -larth
+  239  data
+  240  date
+  241  docker --version
+  242  systemctl status  docker
+  243  docker ps
+  244  docker --version
+  245  puppet agent -t --server devops.salas4linux.com.br
+  246  ll
+  247  docker --version
+  248  top
+  249  q
+  250  to
+  251  docker run debian ls /etc
+  252  ll
+  253  cd /etc/
+  254  docker ps
+  255  docker ps -e
+  256  docker ps -a
+  257  docker run --name desafiador -it centos /bin/bash
+  258  docker ps
+  259  docker ps -a
+  260  docker run --name asa_noturna -h asa_noturna -it centos /bin/bash
+  261  ll
+  262  docker pq
+  263  docker ps
+  264  docker attach desafiador
+  265  docker ps
+  266  docker start desafiador 
+  267  ll
+  268  docker start desafiador 
+  269  ll
+  270* 
+  271  docker exec desafiador ls /etc
+  272  docker exec desafiador vi /etc/hosts
+  273  ll
+  274  reset
+  275  l
+  276  docker ps
+  277  docker start desafiador  /bin/bash
+  278  docker start desafiador /bin/bash
+  279  docker exect desafiador /bin/bash
+  280  docker exec desafiador /bin/bash
+  281  docker exec -it desafiador /bin/bash
+  282  docker restart desafiador
+  283  docker exec desafiador uptime
+  284  uptime
+  285  docker exec desafiador uptime
+  286  docker ps
+  287  docker ps -a
+  288  docker rm peaceful_raman 
+  289  ll
+  290  docker system prume
+  291  docker system prune
+  292  docker -pq
+  293  docker ps -qa
+  294  docker images
+  295  docker search zabbix
+  296  docker search dasa
+  297  docker run root@docker:/etc# docker images
+  298  REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
+  299  centos              latest              5182e96772bf        2 weeks ago         200MB
+  300  docker run aol-dasa
+  301  docker run igorsoares/aol-dasa
+  302  q
+  303  ç
+  304  docker ps
+  305  docker ps -a
+  306  docker start igorsoares/oal-dasa
+  307  docker start igorsoares/aol-dasa
+  308  docker ps -a
+  309  docker start igorsoares/aol-dasa
+  310  docker run igorsoares/aol-dasa
+  311  docker run igorsoares/aol-dasa -dti
+  312  docker run -dti igorsoares/aol-dasa
+  313  lsof -i:8883
+  314  ll
+  315  docker pq
+  316  docker ps
+  317  docker run -dti --name dcwomen -v dcwomen:/root/dcwomen/ centos /bin/bash
+  318  ll
+  319  ls
+  320  ll
+  321  ls
+  322  ll
+  323  ls
+  324  ll
+  325  ls
+  326  docker ps
+  327  docker exec 9b01f6d20378 hostname -i
+  328  telnet 172.17.0.4 8883
+  329  firefox
+  330  apt-get install firefox
+  331  firefox
+  332  df -h
+  333  lll
+  334  telnet 172.17.0.4 8883
+  335  links
+  336  link
+  337  links
+  338  apt-get install links
+  339  links
+  340  docker ps
+  341  docker attach 9b01f6d20378
+  342  ls
+  343  docker ps
+  344  telnet 172.17.0.4 8883
+  345  docker exec 9b01f6d20378 hostname -i
+  346  telnet 172.17.0.4 8883
+  347  links
+  348  cd /var/lib/docker/volumes/
+  349  ll
+  350  cd ..
+  351  ll
+  352  cd image/
+  353  ll
+  354  cd overlay2/
+  355  ll
+  356  cd imagedb/
+  357  ll
+  358  cd content/
+  359  ll
+  360  cd sha256/
+  361  ll
+  362  cd ..
+  363  cd ..c
+  364  d ..
+  365  cd ..
+  366  ll
+  367  cd ..
+  368  ll
+  369  cd ..
+  370  ll
+  371  cd container
+  372  ll
+  373  cd containers/
+  374  ll
+  375  cd 50e75fb89abdbb30caa5b6f0c37db7ee1834e3069b5295e3038b421bbcbc7a42/
+  376  ll
+  377  cd mounts/
+  378  ll
+  379  cd ..
+  380  ls
+  381  grep -rin 'igor' /var/lib/docker/
+  382  grep -rin 'aol-dasa' /var/lib/docker/
+  383  grep -rin 'igorsoares' /var/lib/docker/
+  384  grep -rin 'igor' /var/lib/docker/
+  385  docker run -it -p 8883:8883
+  386  docker ps
+  387  docker stop 9b01f6d20378
+  388  docker run -it -p 8883:8883 9b01f6d20378
+  389  docker run -it -p 8883:8883 igorsoares/aol-dasa
+  390  docker run -dit -p 8883:8883 igorsoares/aol-dasa
+  391  telnet 172.17.0.4 8883
+  392  iptables -F
+  393  docker exec 9b01f6d20378 hostname -i
+  394  docker exec igorsoares/aol-dasa hostname -i
+  395  docker ps
+  396  lsof -i:883
+  397  lsof -i:8883
+  398  telnet localhost 8883
+  399  links
+  400  telnet localhost 8883
+  401  ls
+  402  docker
+  403  dockerps
+  404  docker ps
+  405  docker networ create --subnet 10.0.0.0/16 dockerlan
+  406  docker network create --subnet 10.0.0.0/16 dockerlan
+  407  ip a
+  408  docker ps
+  409  docker network ls
+  410  docker network connect dockerlan server_nginx3
+  411  docker run -dti --name server_nginx nginx -p 8181:80
+  412  docker network connect dockerlan server_nginx
+  413  docker run -ti --name cliente_nginx -h cliente_nginx --ip 10.0.0.10 --net dockerlan debian /bin/bash
+  414  ip a
+  415  ip a | grep 10.0.0
+  416  docker attach cliente_nginx 
+  417  docker commit cliente_nginx cliente_nginx_curl
+  418  docker images
+  419  docker run -dit --name curl -h curl cliente_nginx_curl
+  420  docker ps
+  421  docker attach curl
+  422  ls
+  423  cd ~
+  424  ll
+  425  curl -L https://github.com/docker/compose/releases/download/1.21.2/docker-compose-$(uname -s)-$(uname -m) -o /usr/local/bin/docker-compose
+  426  ll
+  427  ls
+  428  docker
+  429  ll
+  430  curl -L https://github.com/docker/compose/releases/download/1.21.2/docker-compose-$(uname -s)-$(uname -m) -o /usr/local/bin/docker-compose
+  431  /usr/local/bin/docker-compose
+  432  cd /usr/local/bin/
+  433  ll
+  434  ls
+  435  chmod +x *
+  436  ls
+  437  ./docker-compose 
+  438  cd /root/
+  439  mkdir wordpress
+  440  cd wordpress/
+  441  ll
+  442  vim docker-wordpress.yml
+  443  :wq!
+  444  vim docker-wordpress.yml
+  445  docker-compose up -d
+  446  mv docker-wordpress.yml docker-compose.yml 
+  447  ls
+  448  docker-compose up -d
+  449  vim docker-compose.yml 
+  450  docker-compose up -d
+  451  vim docker-compose.yml 
+  452  docker-compose up -d
+  453  vim docker-compose.yml 
+  454  docker-compose up -d
+  455  vim docker-compose.yml 
+  456  docker-compose up -d
+  457* 
+  458  vim docker-compose.yml 
+  459  docker ps
+  460  docker ps -a
+  461  docker system prune
+  462  docker ps -a
+  463  docker ps
+  464  docker-compose up -d
+  465  docker ps
+  466  docker ps -a
+  467  docker logs wordpress_mysql_server_1 
+  468  ll
+  469  vim docker-compose.yml 
+  470  docker-compose up -d
+  471  docker ps
+  472  lsof -i:8080
+  473  docker ps
+  474  lsof -i:8080
+  475  docker ps
+  476  lsof -i:8080
+  477  docker stop *
+  478  docker stop wordpress_mysql_server_1 
+  479  docker stop wordpress_mysql_1
+  480  docker ps
+  481  docker stop wordpress_wordpress_1 
+  482  docker system prune
+  483  docker ps
+  484  docker-compose up -d
+  485  lsof -i:8080
+  486  iptables -F
+  487  iptables -L
+  488  docker stop wordpress_wordpress_1 
+  489  docker stop wordpress_mysql_server_1 
+  490  docker system prune
+  491  docker-compose up -d
+  492  lsof -i:8080
+  493  systemctl restart docker.service 
+  494  iptables -nl
+  495  iptables -NL
+  496  iptables -nL
+  497  docker ps
+  498  docker-compose up -d
+  499  history > docker_texto
