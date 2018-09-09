@@ -1,0 +1,1000 @@
+   58  ansible-playbook playbook.yml 
+   59  ansible devops,docker -m command -a 'ls /tmp'
+   60  vim playbook.yml 
+   61  ls
+   62  ll
+   63  cd /etc/
+   64  ll
+   65  cd -
+   66  ll
+   67  cd /tmp/
+   68  ll
+   69  cd -
+   70  ll
+   71  vim playbook.yml 
+   72  ll
+   73  vim playbook.yml 
+   74  cat playbook.yml 
+   75  ansible devops,docker -m command -a 'ls /tmp'
+   76  ansible-playbook playbook.yml 
+   77  vim playbook.yml 
+   78  ansible-playbook playbook.yml 
+   79  vim playbook.
+   80  vim playbook.yml 
+   81  cat playbook.yml 
+   82  vim playbook.yml 
+   83  cat playbook.yml 
+   84  ansible-playbook playbook.yml 
+   85  cat /etc/hosts
+   86  ansible-playbook playbook.yml 
+   87  vim /etc/hosts
+   88  vim playbook.yml 
+   89  ansible-playbook playbook.yml 
+   90  vim /etc/hosts
+   91  ping automation
+   92  vim /etc/hosts
+   93  free -g
+   94  top
+   95  vim playbook.yml 
+   96  cat playbook.yml 
+   97  rm -rf playbook.retry 
+   98  vim hosts 
+   99  vim playbook.yml 
+  100  ansible-playbook playbook.yml 
+  101  ssh automation
+  102  rm -rf playbook.retry 
+  103  l
+  104  ll
+  105  vim playbook.yml 
+  106  ansible-playbook playbook.yml 
+  107  vim playbook.yml 
+  108  rm -rf playbook.retry 
+  109  ansible-playbook playbook.yml 
+  110  vim playbook.yml 
+  111  ansible-playbook playbook.yml 
+  112  vim playbook.yml 
+  113  ansible-playbook playbook.yml 
+  114  ll
+  115  vim hosts 
+  116  vim playbook.
+  117  vim playbook.yml 
+  118  cath 
+  119  cat hosts 
+  120  vim playbook.yml 
+  121  ansible-playbook playbook.yml 
+  122  vim playbook.yml 
+  123  cat playbook.yml 
+  124  ansible-playbook playbook.yml 
+  125  vim playbook.yml 
+  126  ansible-playbook playbook.yml 
+  127  vim playbook.yml 
+  128  ansible-playbook playbook.yml 
+  129  cat playbook.yml 
+  130  ll
+  131  cat playbook.yml 
+  132  ll
+  133  cd ~
+  134  cp .bashrc bashrc
+  135  vim bashrc
+  136  cd /etc/ansible/
+  137  ll
+  138  rm -rf playbook.retry 
+  139  l
+  140  vim /root/bashrc 
+  141  vim playbook.yml 
+  142  vim bashrc
+  143  cd ~
+  144  vim bashrc 
+  145  cd /etc/ansible/
+  146  ansible-playbook playbook.yml 
+  147  exit
+  148  ps -ef | grep httpd
+  149  ps -ef | grep apache2
+  150  ll
+  151  cd /etc/ansible/
+  152  ll
+  153  ls
+  154  ll
+  155  cat q
+  156  rm -rf q
+  157  ll
+  158  ansible-galaxy init marvin
+  159  ls
+  160  mkdir rules
+  161  mv marvin rules/
+  162  ls
+  163  cd rules/
+  164  ls
+  165  cd marvin/
+  166  ll
+  167  ls
+  168  ll
+  169  ls
+  170  ll
+  171  ls
+  172  ll
+  173  ls
+  174  ll
+  175  ls
+  176  ll
+  177  top
+  178  free -m
+  179  ls
+  180  top
+  181  ls
+  182  ll
+  183  ls -l
+  184  ls -ls *
+  185  cd tasks/
+  186  ll
+  187  ls
+  188  cat main.yml 
+  189  vim main.yml 
+  190  cd ..
+  191  ll
+  192  vim playbook.yml 
+  193  cd -
+  194  ll
+  195  cd marvin/
+  196  cd t
+  197  cd tasks/
+  198  ll
+  199  ls
+  200  cat main.yml 
+  201  > prerequisitos.yml
+  202  ls
+  203  > install_apache.yml
+  204  > install_httpd
+  205  mv install_httpd install_httpd.yml
+  206  ll
+  207  > deploy.yml
+  208  ls
+  209  ll
+  210  vim prerequisitos.yml 
+  211  cat main.yml 
+  212  cat prerequisitos.yml 
+  213  vim main.yml 
+  214  cd ..
+  215  cd -
+  216  l
+  217  cd tasks/
+  218  ll
+  219  pwd
+  220  ll
+  221  vim install_apache.yml 
+  222  vim install_httpd.yml 
+  223  vim install_apache.yml 
+  224  vim deploy.yml 
+  225  cat install_apache.yml 
+  226  cat install_httpd.yml 
+  227  vim install_apache.yml 
+  228  vim install_httpd.yml 
+  229  vim deploy.yml 
+  230  vim main.yml 
+  231  cd ..
+  232  cd templates/
+  233  ll
+  234  vim index.html
+  235  cd ..
+  236  cd tasks/
+  237  ll
+  238  vim main.yml 
+  239  apt remove apache2
+  240  ll
+  241  top
+  242  q
+  243  apt remove apache2-bin
+  244  apt remove   vars:
+  245  apt remove apache2-data apache2-utils
+  246  dḱg -l | grep apache2
+  247  dpḱg -l | grep apache2
+  248  apt remove apache2-bin apache2-data apache2-utils
+  249  apt remove apache2-bin apache2-data apache2-utils liapache2-mod-php7.0
+  250  top
+  251  ll
+  252  ansible-playbook main.yml
+  253  ll
+  254  ansible-playbook main.yml
+  255  vim main.yml 
+  256  vim deploy.yml 
+  257  ansible-playbook main.yml
+  258  vim deploy.yml 
+  259  ansible-playbook main.yml
+  260  vim main.yml 
+  261  ansible-playbook main.yml
+  262  vim deploy.yml 
+  263  ansible-playbook main.yml
+  264  vim deploy.yml 
+  265  ansible-playbook main.yml
+  266  vim deploy.yml 
+  267  ansible-playbook main.yml
+  268  cd ..
+  269  cd te
+  270  cd templates/
+  271  ll
+  272  cat index.html 
+  273  ll
+  274  cd ..
+  275  ll
+  276  cd templates/
+  277  ll
+  278  cd ..
+  279  cd tasks/
+  280  l
+  281  ll
+  282  ansible-playbook main.yml
+  283  systemctl status apache2.service
+  284  systemctl start apache2.service
+  285  apt-get install apache
+  286  apt-get install apache2
+  287  apm autoremove
+  288  apm autoremove apache2
+  289  ll
+  290  ansible-playbook main.yml
+  291  vim install_apache.yml 
+  292  vin deploy.yml 
+  293  vim deploy.yml 
+  294  ansible-playbook main.yml
+  295  cd /etc/apache2/
+  296  ll
+  297  cd mods-enabled/
+  298  ll
+  299  rm php7.0.load 
+  300  ansible-playbook main.yml
+  301  cd -
+  302  cd /etc/ansible/rules/marvin/tasks/
+  303  ansible-playbook main.yml
+  304  vim main.
+  305  vim main.yml 
+  306  ansible-playbook main.yml
+  307  vim main.yml 
+  308  cd ..
+  309  ll
+  310  cd ..
+  311  ll
+  312  cd rules/
+  313  ll
+  314  ansible-galaxy init puppet
+  315  ls
+  316  cd puppet/
+  317  ll
+  318  cd tasks/
+  319  ll
+  320  vim prerequisitos.yml
+  321  l
+  322  > prerequisitos.yml
+  323  >deploy.yml
+  324  > install_puppet.yml
+  325  ll
+  326  ls -l
+  327  mv install_puppet.yml install_puppet_debian.yml 
+  328  > install_puppet_redhat.yml
+  329  ls -l
+  330  ll
+  331  l
+  332  ls
+  333  cd ..
+  334  cd meta/
+  335  cd ..
+  336  cdm marvin/
+  337  ll
+  338  cd marvin/
+  339  ll
+  340  cd tasks/
+  341  ll
+  342  vim prerequisitos.yml 
+  343  ll
+  344  vim deploy.yml 
+  345  ll
+  346  cd ..
+  347  ll
+  348  cd puppet/
+  349  ll
+  350  cd tasks/
+  351  ll
+  352  vim prerequisitos.yml 
+  353  vim install_puppet_debian.yml 
+  354  vim install_puppet_redhat.yml 
+  355  vim main.yml 
+  356  vim deploy.yml 
+  357  vim install_puppet_redhat.yml 
+  358  vim install_puppet_debian.yml 
+  359  vim install_puppet_redhat.yml 
+  360  vim install_puppet_debian.yml 
+  361  ll
+  362  vim install_puppet_debian.yml 
+  363  vim install_puppet_redhat.yml 
+  364  vim install_puppet_debian.yml 
+  365  vim main.yml 
+  366  vim prerequisitos.yml 
+  367  vim install_puppet_debian.yml 
+  368  cd ..
+  369  cd marvin/
+  370  ll
+  371  cd tasks/
+  372  ll
+  373  vim prerequisitos.yml 
+  374  cd -
+  375  cd ..
+  376  cd puppet/
+  377  cd tasks/
+  378  ll
+  379  vim install_puppet_debian.yml 
+  380  vim install_puppet_redhat.yml 
+  381  vim main.yml 
+  382  ansible-playbook main.yml
+  383  ll
+  384  vim install_puppet_redhat.yml 
+  385  ansible-playbook main.yml
+  386  vim install_puppet_redhat.yml 
+  387  l
+  388  vim install_puppet_redhat.yml 
+  389  ansible-playbook main.yml
+  390  vim install_puppet_redhat.yml 
+  391  ansible-playbook main.yml
+  392  ll
+  393  vim prerequisitos.yml 
+  394  vim main.yml 
+  395  vim install_puppet_debian.yml 
+  396  vim install_puppet_redhat.yml 
+  397  vim prerequisitos.yml 
+  398  vim install_puppet_debian.yml 
+  399  ll
+  400  ls
+  401  ll
+  402  ls
+  403  exit
+  404  puppet --version
+  405  top
+  406  ll
+  407  ls
+  408  l
+  409  ls
+  410  ll
+  411  free -m
+  412  ll
+  413  ls
+  414  ll
+  415  ls
+  416  ll
+  417  l
+  418  ll
+  419  puppet resource package ccze
+  420  puppet resource package ccze ensure=present
+  421  man ccze
+  422  puppet resource package ccze
+  423  ll
+  424  ls
+  425  ll
+  426  puppet resource service apache2
+  427  puppet resource service apache2 enable=false
+  428  puppet resource service apache2 ensure=stopped
+  429  puppet resource service apache2 enable=true ensure=startted
+  430  puppet resource service apache2 enable=true
+  431  puppet resource service apache2 ensure=restarted
+  432  puppet resource service apache2 ensure=runing
+  433  puppet resource service apache2 ensure=running
+  434  puppet resource service apache2
+  435  puppet resource package puppetserver
+  436  puppet resource package puppetserver ensure=present
+  437  ll
+  438  ls
+  439  ll
+  440  ls
+  441  facter
+  442  man facter
+  443  ll
+  444  ls
+  445  lls
+  446  ll
+  447  cd /etc/puppetlabs/
+  448  ll
+  449  ls
+  450  ll
+  451  cd /opt/
+  452  ll
+  453  cd puppetlabs/
+  454  ll
+  455  cd /etc/puppetlabs/
+  456  ll
+  457  cd /root/
+  458  ll
+  459  mkdir puppet
+  460  ll
+  461  cd puppet/
+  462  ll
+  463  vim manifest.pp
+  464  puppet apply manifest.pp 
+  465  htop
+  466  cd /tmp/
+  467  ll
+  468  cat memfree 
+  469  cd /root/
+  470  ll
+  471  cd /tmp/
+  472  ll
+  473  puppet apply manifest.pp 
+  474  cd /root/
+  475  cd puppet/
+  476  cd /root/
+  477  cd puppet/
+  478  puppet apply manifest.pp 
+  479  vim manifest.pp
+  480  puppet apply manifest.pp 
+  481  vim manifest.pp
+  482  puppet apply manifest.pp 
+  483  cat manifest.pp 
+  484  vim manifest.pp
+  485  puppet apply manifest.pp 
+  486  vim manifest.pp
+  487  puppet apply manifest.pp 
+  488  cd /etc/puppetlabs/
+  489  ll
+  490  cd puppet
+  491  ll
+  492  cd ..
+  493  cd code/
+  494  ll
+  495  cd modules/
+  496  ls
+  497  puppet resource package pdk ensure=present
+  498  ll
+  499  cd ..
+  500  ll
+  501  cd ..
+  502  ll
+  503  history | grep puppet
+  504  ll
+  505  cd code/
+  506  cd modules/
+  507  ll
+  508  pdk new module capuz_vermelho
+  509  ll
+  510  cd capuz_vermelho/
+  511  ll
+  512  ls
+  513  cd manifests/
+  514  ll
+  515  ls
+  516  ll
+  517  ls
+  518  ll
+  519  ls
+  520  ll
+  521  ls
+  522  vim site.pp
+  523  cd ..
+  524  cd co
+  525  ll
+  526  cd ..
+  527  ll
+  528  cd ..
+  529  ll
+  530  cd ..
+  531  ll
+  532  cd code/
+  533  ll
+  534  cd environments/
+  535  ll
+  536  cd production/
+  537  ll
+  538  cd manifests/
+  539  ll
+  540  ls
+  541  vim site.pp
+  542  cat site.pp 
+  543  ll
+  544  ls
+  545  ll
+  546  ls
+  547  ll
+  548  cd ..
+  549  ll
+  550  cd ..
+  551  ll
+  552  cd modules/capuz_vermelho/
+  553  ll
+  554  ls
+  555  cd files/
+  556  ll
+  557  ls
+  558  vim puppet.conf
+  559  cd ..
+  560  cd manifests/
+  561  ll
+  562  lls
+  563  ls
+  564  pwd
+  565  cd ..
+  566  cd files/
+  567  ll
+  568  cat puppet.conf 
+  569  cd ..
+  570  cd manifests/
+  571  ll
+  572  vim init.pp
+  573  cat init.pp 
+  574  ll
+  575  vim init.pp
+  576  cat init.pp 
+  577  vim init.pp
+  578  puppet resource service puppetserver ensure=running enable=true
+  579  ps -ef | grep puppet
+  580  ps -ef | grep puppetserver
+  581  lsof -i:8140
+  582  puppet cert list
+  583  puppet cert list -a
+  584  puppet cert list
+  585  puppet cert sign docker
+  586  puppet cert sign 192.168.99.20
+  587  puppet cert sign docker.salas4linux.com.br
+  588  l
+  589  puppet cert sign automation.salas4linux.com.br
+  590  ll
+  591  vim init.pp 
+  592  pwd
+  593  vim init.pp 
+  594  puppet cert clean docker.salas4linux.com.br
+  595  puppet cert sign docker.salas4linux.com.br
+  596  dpkg -l | grep puppet
+  597  ll
+  598  ls
+  599  cd /etc/puppetlabs/puppet/
+  600  vim puppet.conf 
+  601  ll
+  602  vim puppet.conf 
+  603  cd ..
+  604  ll
+  605  cd puppet
+  606  ll
+  607  cd ..
+  608  ll
+  609  cd code/
+  610  ll
+  611  cd modules/
+  612  ll
+  613  cd capuz_vermelho/files/
+  614  ll
+  615  vim puppet.conf 
+  616  ll
+  617  cd ..
+  618  llllll
+  619  cd ..
+  620  ll
+  621  cd ..
+  622  ll
+  623  cd ..
+  624  ll
+  625  cd puppetserver/
+  626  ll
+  627  cd ..
+  628  ll
+  629  ls
+  630  free -L 2
+  631  tree -L 2
+  632  lll
+  633  ll
+  634  cd ;;
+  635  cd code/modules/
+  636  ll
+  637  pdk new module base
+  638  cd base/manifests/
+  639  ll
+  640  vim init.pp
+  641  cat init.pp 
+  642  vim init.pp
+  643  ll
+  644  l
+  645  ll
+  646  l
+  647  ll
+  648  ls
+  649  cd ..
+  650  ll
+  651  cd ..
+  652  ll
+  653  cd ..
+  654  ll
+  655  cd environments/
+  656  ll
+  657  cd production/
+  658  ll
+  659  ls
+  660  ll
+  661  cd manifests/
+  662  ll
+  663  cd ..
+  664  ll
+  665  cd modules/
+  666  ll
+  667  cd ..
+  668  ll
+  669  cd manifests/
+  670  ll
+  671  vim site.pp 
+  672  cd ..
+  673  ll
+  674  cd ..
+  675  l
+  676  ll
+  677  cd production/
+  678  ll
+  679  cd modules/
+  680  ll
+  681  cd ..
+  682  ll
+  683  cd ..
+  684  ll
+  685  cd modules/
+  686  ll
+  687  cd ..
+  688  ll
+  689  cd environments/
+  690  ll
+  691  cd production/
+  692  l
+  693  ll
+  694  cd modules/
+  695  ll
+  696  cd ..
+  697  ll
+  698  cd ..
+  699  l
+  700  ll
+  701  l
+  702  ll
+  703  cd ..
+  704  ll
+  705  cd ..
+  706  l
+  707  ll
+  708  cd ..
+  709  ll
+  710  cd puppetlabs/
+  711  ll
+  712  cd p
+  713  cd puppet
+  714  ll
+  715  cd ..
+  716  l
+  717  ll
+  718  cd code/
+  719  ll
+  720  cd environments/
+  721  ll
+  722  cd production/
+  723  ll
+  724  cd modules/
+  725  ll
+  726  cd ..
+  727  ll
+  728  cd manifests/
+  729  ll
+  730  vim site.pp 
+  731  ll
+  732  vim site.pp 
+  733  ll
+  734  vim site.pp 
+  735  ll
+  736  cd ..
+  737  vim site.pp 
+  738  ll
+  739  cd manifests/
+  740  ll
+  741  vim site.pp 
+  742  top
+  743  cd /etc/puppetlabs/
+  744  ll
+  745  pwd
+  746  cd do
+  747  cd code/
+  748  ll
+  749  pwd
+  750  top
+  751  ll
+  752  cd modules/
+  753  ls
+  754  cd base/
+  755  ls
+  756  cd manifests/
+  757  ls
+  758  vim init.pp 
+  759  ll
+  760  vim init.pp 
+  761  systemctl status puppetserver.service 
+  762  lsof -i:84*
+  763  lsof -i:8401
+  764  lsof -i:8140
+  765  cat init.pp 
+  766  ls
+  767  lsof -i:8140
+  768  ls
+  769  systemctl status puppetserver.service 
+  770  owd
+  771  cd ..
+  772  ll
+  773  cd production/
+  774  cd manifests/
+  775  vim site.pp 
+  776  puppet agent -t
+  777  cd /etc/puppetlabs/puppet
+  778  vim puppet.conf 
+  779  cd -
+  780  vim site.pp 
+  781  puppet agent -t
+  782  puppet agent -t --server devops.salas4linux.com.br
+  783  vim site.pp 
+  784  puppet agent -t --server devops.salas4linux.com.br
+  785  vim site.pp 
+  786  puppet agent -t --server devops.salas4linux.com.br
+  787  puppet agent -t
+  788  vim https://download.springsource.com/release/STS/3.9.5.RELEASE/dist/e4.8/spring-tool-suite-3.9.5.RELEASE-e4.8.0-linux-gtk-x86_64.tar.gz
+  789  puppet agent -t
+  790  vim site.pp 
+  791  vim /etc/puppetlabs/code/modules/base/manifests/init.pp
+  792  puppet agent -t
+  793  vim /etc/puppetlabs/code/modules/base/manifests/init.pp
+  794  puppet agent -t
+  795  vim /etc/hosts
+  796  vim /etc/puppetlabs/code/modules/base/manifests/init.pp
+  797  puppet agent -t
+  798  vim /etc/puppetlabs/code/modules/base/manifests/init.pp
+  799  puppet agent -t
+  800  vim /etc/puppetlabs/code/modules/base/manifests/init.pp
+  801  puppet agent -t
+  802  cat /etc/passwd | grep devo
+  803  vim /etc/puppetlabs/code/modules/base/manifests/init.pp
+  804  vim /etc/puppetlabs/code/modules/base/files/bash_logout
+  805  exit
+  806  cd /etc/puppetlabs/code/
+  807  cd modules/o
+  808  ll
+  809  cd modules/
+  810  dpk new module mr_miracle
+  811  pdk new module mr_miracle
+  812  ll
+  813  cd mr_miracle/
+  814  ll
+  815  cd manifests/
+  816  ll
+  817  vim init.pp
+  818  cd ..
+  819  ll
+  820  cd ..
+  821  cd environments/production/
+  822  ll
+  823  cd manifests/
+  824  ll
+  825  vim site.pp 
+  826  lll
+  827  ls
+  828  ll
+  829  ls
+  830  s
+  831  ls
+  832  l
+  833  ls
+  834  vim site.pp 
+  835  cd ..
+  836  cd mr
+  837  ll
+  838  cdcd modules/
+  839  ll
+  840  cd modules/
+  841  ll
+  842  cd mr_miracle/
+  843  ll
+  844  cd manifests/
+  845  ll
+  846  vim init.pp 
+  847  l
+  848  cd ..
+  849  ll
+  850  cd /etc/puppetlabs/
+  851  ll
+  852  cd puppet
+  853  ll
+  854  cd ..
+  855  ll
+  856  tar -cvf puppetserver.tar puppetserver/
+  857  ls
+  858  l
+  859  ll
+  860  ping maddog08
+  861  scp puppetserver.tar domingo@maddog08:/home/domingo/
+  862  cd /etc/
+  863  ll
+  864  cd en
+  865  tar -cvf ansible.tar ansible/
+  866  scp ansible.tar domingo@maddog08:/home/domingo/
+  867  cd /etc/puppetlabs/puppetserver/
+  868  ll
+  869  cd ..
+  870  cd puppet
+  871  ll
+  872  cd ..
+  873  cd code/
+  874  ll
+  875  cd modules/
+  876  ll
+  877  pdk new module docker
+  878  ls
+  879  ll
+  880  cd docker/
+  881  ll
+  882  cd manifests/
+  883  ll
+  884  vim init.pp
+  885  vim ../../base/manifests/init.pp 
+  886  vim init.pp
+  887  ll
+  888  l
+  889  ll
+  890  l
+  891  ll
+  892  cd ..
+  893  ll
+  894  cd ..
+  895  ll
+  896  cd ..
+  897  l
+  898  ll
+  899  cd -
+  900  ll
+  901  cd docker/
+  902  ll
+  903  cd manifests/
+  904  ll
+  905  vim init.pp 
+  906  cd ..
+  907  ll
+  908  cd code/
+  909  ll
+  910  cd environments/production/
+  911  ll
+  912  cd m
+  913  cd manifests/
+  914  ll
+  915  vim site.pp 
+  916  cd ..
+  917  cd modules/
+  918  ll
+  919  cd docker/
+  920  ll
+  921  cd manifests/
+  922  ll
+  923  vi si
+  924  l
+  925  ll
+  926  ls
+  927  vi init.pp 
+  928  lsb_release -cs
+  929  vi init.pp 
+  930  cd ..
+  931  ll
+  932  cd mr_miracle/
+  933  ll
+  934  cd manifests/
+  935  ll
+  936  vim init.pp 
+  937  cd ..
+  938  ll
+  939  cd ..
+  940  ll
+  941  cd docker/
+  942  ll
+  943  cd manifests/
+  944  ll
+  945  vim init.pp 
+  946  cd ..
+  947  ll
+  948  cd environments/
+  949  ll
+  950  cd production/
+  951  ll
+  952  cd manifests/
+  953  ll
+  954  vim site.pp 
+  955  cd ..
+  956  cd code/environments/production/
+  957  cd ..
+  958  ll
+  959  cd ..
+  960  ll
+  961  cd modules/
+  962  ll
+  963  pwd
+  964  cd docker/
+  965  ll
+  966  cd manifests/
+  967  ll
+  968  vim init.pp 
+  969  top
+  970  telnet docker 8883
+  971  telnet 172.17.0.4 8883
+  972  ls
+  973  firefox
+  974  ls
+  975  telnet 172.17.0.4 8883
+  976  iptables -F
+  977  telnet 172.17.0.4 8883
+  978  telnet 172.17.0.4 80
+  979  telnet 192.168.99.20 8883
+  980  telnet 192.168.99.20 80
+  981  telnet 192.168.99.20 8883
+  982  l
+  983  ls
+  984  l
+  985  exit
+  986  cd /etc/ansible/
+  987  ll
+  988  vim gitlab.yml 
+  989  ls
+  990  ping 8.8.8.8
+  991  ping google.com.ev
+  992  ping google.com.br
+  993  ping www.google.com.br
+  994  systemctl stop puppetserver.service 
+  995  systemctl stop puppet
+  996  ll
+  997  ls
+  998  ll
+  999  gitlab-ctl start
+ 1000  systemctl status nginx.service 
+ 1001  systemctl stop apache2.service 
+ 1002  top
+ 1003  cd ~
+ 1004  ll
+ 1005  mkdir homem_elastico
+ 1006  ll
+ 1007  cd homem_elastico/
+ 1008  ll
+ 1009  git init
+ 1010  git remote add git@192.168.99.10:root/Blue-Green.git
+ 1011  git remote add bluegreen git@192.168.99.10:root/Blue-Green.git
+ 1012  git -v
+ 1013  git remote -v
+ 1014  vi index.html
+ 1015  cat index.html 
+ 1016  git add .
+ 1017  git commit -m "Criação do Index"
+ 1018  git push bluegreen master
+ 1019  systemctl stop puppet
+ 1020  systemctl stop puppetserver.service 
+ 1021  top
+ 1022  ll
+ 1023  vi index.html 
+ 1024  ll
+ 1025  top
+ 1026  git commit -am "Testando primeiro deploy bluegreen"
+ 1027  git push gitlab
+ 1028  git push bluegreen master
+ 1029  git commit -am "Testando primeiro deploy bluegreen 2"
+ 1030  vi index.html 
+ 1031  git commit -am "Testando primeiro deploy bluegreen 2"
+ 1032  git push bluegreen master
+ 1033  a >> index.html 
+ 1034  cat <p> Oi </p> >> index.html 
+ 1035  cat  '<p> Oi </p> >>' index.html 
+ 1036  :q
+ 1037  cat  '<p> Oi </p>' >>  index.html 
+ 1038  cat  Oiiiiii  >>  index.html 
+ 1039  echo "<p> Oi </p>"  >>  index.html 
+ 1040  git commit -am "Testando primeiro deploy bluegreen 3"
+ 1041  git push bluegreen master
+ 1042  echo "<p> Oi </p>"  >>  index.html 
+ 1043  git commit -am "Testando primeiro deploy bluegreen 3"
+ 1044  git push bluegreen master
+ 1045  echo "<p> Oi </p>"  >>  index.html 
+ 1046  git commit -am "Testando primeiro deploy bluegreen 3"
+ 1047  git push bluegreen master
+ 1048  echo "<p> Oi </p>"  >>  index.html 
+ 1049  git commit -am "Testando primeiro deploy bluegreen 3"
+ 1050  git push bluegreen master
+ 1051  echo "<p> Oi </p>"  >>  index.html 
+ 1052  git commit -am "Testando primeiro deploy bluegreen 3"
+ 1053  git push bluegreen master
+ 1054  ll
+ 1055  cd ..
+ 1056  ll
+ 1057  history > ultima_aula_devops
